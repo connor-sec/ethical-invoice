@@ -1,9 +1,21 @@
-# Ethical Invoice Generator
+# Ethical Invoice
 
-A fully local, privacy-respecting invoice generator designed for **authorized red teaming and social engineering engagements**.
+A fully local, privacy-respecting invoice generator designed for **authorized red teaming and social engineering engagements**. Runs entirely in your browser — no network, no dependencies, nothing leaves the page.
+
+Maintained by [@connor-sec](https://github.com/connor-sec).
 
 > **⚠️ Authorized Use Only**  
 > This tool is intended exclusively for legitimate security testing, red team exercises, penetration testing, and security awareness programs conducted under proper written authorization. Unauthorized use for fraud, phishing without consent, or any illegal activity is strictly prohibited and may violate applicable laws.
+
+## Usage
+
+Open `Ethical_Invoice.html` in any modern browser. That's it — no install, no server.
+
+## ⚠️ Authorized use only — for security research and education
+
+**Authorized use.**This tool is intended exclusively for legitimate security testing, red team exercises, penetration testing, and security awareness programs conducted under proper written authorization. Unauthorized use for fraud, phishing without consent, or any illegal activity is strictly prohibited and may violate applicable laws. Accessing, duplicating, or forging invoices without authorization may violate law, contract, or organizational policy.
+
+**Warranty and trademarks.** Provided "as is", without warranty of any kind. 
 
 ---
 
@@ -25,14 +37,6 @@ A fully local, privacy-respecting invoice generator designed for **authorized re
 ## Purpose
 
 Realistic invoices are a common and highly effective pretext in social engineering and physical security assessments. This generator helps red teamers and security professionals create professional-looking invoices that can support scenarios such as:
-
-- Pretexting as vendors, service providers, or contractors
-- Multi-location / multi-site engagement simulations
-- Physical access testing (service invoices for facilities, HVAC, IT, cleaning, etc.)
-- Security awareness training and phishing simulations (with proper authorization)
-- Tabletop exercises and purple team activities
-
-Everything runs entirely in the browser. **No data is ever sent to a server.**
 
 ---
 
@@ -117,7 +121,7 @@ This project is licensed under the **MIT License**.
 ```
 MIT License
 
-Copyright (c) 2026 Connor Haft
+Copyright (c) 2026 Connor-SEC
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
