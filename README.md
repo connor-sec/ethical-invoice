@@ -4,8 +4,11 @@ A fully local, privacy-respecting invoice generator designed for **authorized re
 
 Maintained by [@connor-sec](https://github.com/connor-sec).
 
-> **⚠️ Authorized Use Only**  
-> This tool is intended exclusively for legitimate security testing, red team exercises, penetration testing, and security awareness programs conducted under proper written authorization. Unauthorized use for fraud, phishing without consent, or any illegal activity is strictly prohibited and may violate applicable laws.
+<p align="center">
+    <img src="Ethical_Invoice_logo.jpg" alt="Ethical Invoice" width="400">
+</p>
+
+> **Download:** the latest single-file build is available from the **Packages** tab (or the [Releases](https://github.com/connor-sec/ethical-invoice/releases) page) — one `.html` file, ready to open.
 
 ## Usage
 
@@ -13,7 +16,7 @@ Open `Ethical_Invoice.html` in any modern browser. That's it — no install, no 
 
 ## ⚠️ Authorized use only — for security research and education
 
-**Authorized use.**This tool is intended exclusively for legitimate security testing, red team exercises, penetration testing, and security awareness programs conducted under proper written authorization. Unauthorized use for fraud, phishing without consent, or any illegal activity is strictly prohibited and may violate applicable laws. Accessing, duplicating, or forging invoices without authorization may violate law, contract, or organizational policy.
+**Authorized use.** This tool is intended exclusively for legitimate security testing, red team exercises, penetration testing, and security awareness programs conducted under proper written authorization. Unauthorized use for fraud, phishing without consent, or any illegal activity is strictly prohibited and may violate applicable laws. Accessing, duplicating, or forging invoices without authorization may violate law, contract, or organizational policy.
 
 **Warranty and trademarks.** Provided "as is", without warranty of any kind. 
 
