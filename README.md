@@ -5,7 +5,7 @@ A fully local, privacy-respecting invoice generator designed for **authorized re
 Maintained by [@connor-sec](https://github.com/connor-sec).
 
 <p align="center">
-    <img src="Ethical_Invoice_logo.jpg" alt="Ethical Invoice" width="400">
+    <img src="Ethical_Invoice_logo.png" alt="Ethical Invoice" width="400">
 </p>
 
 > **Download:** the latest single-file build is available from the **Packages** tab (or the [Releases](https://github.com/connor-sec/ethical-invoice/releases) page) — one `.html` file, ready to open.
