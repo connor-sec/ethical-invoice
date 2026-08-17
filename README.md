@@ -12,112 +12,77 @@ Maintained by [@connor-sec](https://github.com/connor-sec).
 
 ## Usage
 
-Open `Ethical_Invoice.html` in any modern browser. That's it — no install, no server.
+Open `Ethical_Invoice.html` in any modern browser (Chrome, Firefox, Edge, Safari). That’s it — no install, no server, no internet required.
 
-## ⚠️ Authorized use only — for security research and education
+## ⚠️ Authorized use only — for security research and authorized testing
 
-**Authorized use.** This tool is intended exclusively for legitimate security testing, red team exercises, penetration testing, and security awareness programs conducted under proper written authorization. Unauthorized use for fraud, phishing without consent, or any illegal activity is strictly prohibited and may violate applicable laws. Accessing, duplicating, or forging invoices without authorization may violate law, contract, or organizational policy.
+**Authorized use.** This tool is intended exclusively for legitimate security testing, red team exercises, penetration testing, purple team activities, and security awareness programs conducted under proper written authorization. Use it only within an expressly authorized and documented testing scope.
 
-**Warranty and trademarks.** Provided "as is", without warranty of any kind. 
+**Illegal use is prohibited.** Creating or distributing invoices for fraud, unauthorized access, phishing without consent, or any other illegal activity is strictly forbidden and may violate applicable laws. Authorization must come from the target organization (or from ownership / explicit permission to test).
 
----
+**No data collection.** The tool runs entirely in your browser. It does not transmit, store, or process any invoice data outside of your local machine (optional `localStorage` drafts stay on your device only).
+
+**Warranty.** Provided “as is”, without warranty of any kind. This is not legal advice. The authors accept no liability for misuse.
+
+## Why this exists
+
+Realistic invoices are one of the most effective and commonly used pretexts in social engineering and physical security assessments. Public online invoice generators are convenient but require sending data to third-party servers and often leave traces.
+
+This project exists to give red teamers and security professionals a clean, fully offline alternative: a single HTML file you can keep on a laptop or USB drive, open anywhere (internet or not), and use to produce professional multi-page invoices for authorized engagements — especially those involving multiple service locations or sites.
+
+Nothing is ever uploaded. Everything stays under your control.
+
+## Features
+
+- **100% client-side** — No backend, no accounts, no telemetry. Your data never leaves the browser.
+- **Multi-address support** — Add up to **10 service locations / offices**. Printing automatically generates one invoice page per address (with sequential invoice numbers when multiple addresses are present).
+- **Professional layout** — Clean, modern invoice design suitable for real engagements.
+- **Logo upload** — Add a company logo that appears on the printed pages.
+- **Flexible line items** — Quantity, rate, and amount fields (editing the amount automatically adjusts the rate).
+- **Tax & discount** — Percentage tax rate + flat discount support.
+- **Multi-currency** — Select from common currencies.
+- **Signature block** — Point-of-contact name, title, authorizing party, date, and a customizable cursive-style signature (font + size).
+- **Notes / payment instructions** — Free-text area for additional context or terms.
+- **Local drafts** — Save and reload drafts using browser `localStorage`.
+- **Print to PDF** — Native browser print dialog produces a multi-page PDF.
 
 ## How to Print / Generate PDF
 
-1. Fill out the invoice (company details, line items, addresses, signature, etc.).
+1. Fill out the invoice (company details, line items, service addresses, signature, etc.).
 2. Click the **Print / Download PDF** button.
 3. In the browser print dialog:
    - Destination → **Save as PDF** (or “Microsoft Print to PDF”)
    - Layout → **Portrait**
-   - Margins → **None** or **Minimum** (recommended for clean edges)
-   - Background graphics → **Enabled** (so colors and the logo print correctly)
-4. Save the multi-page PDF.
+   - Margins → **None** or **Minimum**
+   - Background graphics → **Enabled** (so colors and the logo appear correctly)
+4. Save the file.
 
-**Tip:** When multiple service addresses are added, each address automatically becomes its own page with a sequential invoice number.
+**Tip:** When multiple service addresses are added, each address becomes its own page with a sequential invoice number.
 
----
+## Multi-Address Behavior
 
-## Purpose
-
-Realistic invoices are a common and highly effective pretext in social engineering and physical security assessments. This generator helps red teamers and security professionals create professional-looking invoices that can support scenarios such as:
-
----
-
-## Features
-
-- **100% Client-Side** — No backend, no accounts, no telemetry. Your data never leaves the browser.
-- **Multi-Address Support** — Add up to **10 service locations / offices**. When you print, the tool generates a separate invoice page for each address (with sequential invoice numbers if desired).
-- **Professional Layout** — Clean, modern invoice design inspired by popular online generators.
-- **Logo Upload** — Add a company logo that appears on the printed invoice.
-- **Line Items** — Flexible quantity / rate / amount fields (editing the amount automatically adjusts the rate).
-- **Tax & Discount** — Percentage tax rate + flat discount.
-- **Multi-Currency** — Select from common currencies.
-- **Signature Block** — Point-of-contact name, title, authorizing party, date, and a customizable cursive-style signature (font + size).
-- **Notes / Payment Instructions** — Free-text area for terms or additional context.
-- **Local Drafts** — Save and load drafts using browser `localStorage`.
-- **Print to PDF** — Use the browser’s native print dialog to produce a multi-page PDF (one page per service address).
-
----
-
-## Quick Start
-
-1. Clone or download this repository.
-2. Open `index.html` in any modern browser (Chrome, Firefox, Edge, Safari).
-3. Fill in the invoice details.
-4. Optionally add service addresses (up to 10).
-5. Click **Print / Download PDF** and choose “Save as PDF” in the print dialog.
-
-No installation, no dependencies, no build step.
-
----
-
-## Multi-Address Printing Behavior
-
-- If you add **no** service addresses → one invoice page is generated.
-- If you add **1–10** addresses → one invoice page is generated **per address**.
-- Invoice numbers can auto-increment across the pages when multiple addresses are present.
+- **0 addresses** → one invoice page is generated.
+- **1–10 addresses** → one invoice page is generated **per address**.
+- Invoice numbers can auto-increment across pages when multiple addresses are present.
 - Each page clearly shows the corresponding **Service Address / Location**.
 
-This is particularly useful for engagements involving multiple sites, campuses, or regional offices.
+This is especially useful for multi-site or multi-campus engagements.
 
----
+## Privacy & Technical Details
 
-## Ethical & Legal Guidelines
+| Aspect                  | Detail                                      |
+|-------------------------|---------------------------------------------|
+| Stack                   | Single HTML file (HTML + CSS + Vanilla JS)  |
+| Network                 | None — works fully offline                  |
+| Dependencies            | Zero                                        |
+| Storage                 | Optional browser `localStorage` only        |
+| Max service addresses   | 10                                          |
+| Browser support         | Modern evergreen browsers                   |
 
-This tool exists to support **defensive** security work. Users must:
-
-1. Have **explicit written authorization** from the target organization (or be operating under an approved red team / purple team scope).
-2. Comply with all applicable local, state, and federal laws.
-3. Use generated invoices only within the boundaries of the authorized engagement.
-4. Never use this tool to commit fraud, unauthorized access, or any other illegal activity.
-
-The authors and contributors accept no liability for misuse.
-
----
-
-## Technical Details
-
-| Aspect              | Detail                                      |
-|---------------------|---------------------------------------------|
-| Stack               | Single HTML file (HTML + CSS + Vanilla JS)  |
-| Storage             | Browser `localStorage` only (optional)      |
-| Network             | None — works fully offline                  |
-| Dependencies        | Zero                                        |
-| Browser Support     | Modern evergreen browsers                   |
-| Max Service Addresses | 10                                        |
-
----
-
-## Privacy
-
-- No analytics
-- No external fonts or scripts (except system fonts)
-- No cookies beyond what the browser itself may use
-- Logo images and all invoice data stay in memory / localStorage on your machine
-
----
-
+- No analytics  
+- No external fonts or scripts (except system fonts)  
+- Logo images and all invoice data remain in memory / localStorage on your machine  
 
 ## License
 
-Released under the [MIT License](https://github.com/connor-sec/ethical-invoice/blob/main/LICENSE).
+This project is released under the [MIT License](LICENSE).
